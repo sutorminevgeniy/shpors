@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>js_test</title>
+</head>
+<body>
+	<div id="par">
+		<div class="child">
+			<p>text1</p>
+			<div class="child">
+				<p>text1.1</p>
+			</div>
+			<div class="child">
+				<p>text1.2</p>
+			</div>
+		</div>
+		<div class="child">
+			<p>text2</p>
+		</div>
+		<div class="child">
+			<p>text3</p>
+		</div>
+		<div class="child">
+			<p>text4</p>
+		</div>
+	</div>
+	<script>
+		var parent = document.getElementById('par');
+		console.log(parent);
+
+		var ch = parent.querySelectorAll('#par>.child');
+		console.log(ch);
+	</script>
+</body>
+</html>
