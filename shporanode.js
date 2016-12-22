@@ -26,3 +26,25 @@ node app.js
 
 // подсказка
 npm help prune
+
+
+/*---------------- Code -------------------*/
+// Module
+// user.js
+function User(name){
+    this.name = name;
+}
+
+User.prototype.hello = function(who){
+    console.log("Hello, " + who.name);
+};
+
+console.log("user.js is required!");
+
+exports.User = User;
+
+// server.js
+var vasya = new user.User("Вася");
+var petya = new user.User("Петя");
+
+vasya.hello(petya);
