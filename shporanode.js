@@ -20,6 +20,12 @@ npm prune
 // обновление всех модулей
 npm update
 
+// установленные пакеты
+npm list
+// показывает установленные глобально пакеты
+npm list -g --depth=0
+
+
 // запуск приложения
 node app
 node app.js
@@ -32,8 +38,6 @@ npm help prune
 npm install --g node-static
 // запуск
 static &
-
-
 
 
 /*---------------- Code -------------------*/
