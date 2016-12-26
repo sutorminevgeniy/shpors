@@ -6,8 +6,11 @@ npm install --g webpack
 // локально
 npm install webpack --save-dev
 
-
+// вызов
 webpack main.js bundle.js
+webpack
+// с минификацией
+webpack -p
 
 
 // простейший модуль статики
