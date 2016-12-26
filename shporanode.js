@@ -56,6 +56,8 @@ console.log("user.js is required!");
 exports.User = User;
 
 // server.js
+var user = require('user');
+
 var vasya = new user.User("Вася");
 var petya = new user.User("Петя");
 
