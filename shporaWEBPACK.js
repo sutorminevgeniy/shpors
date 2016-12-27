@@ -4,6 +4,7 @@ npm install webpack -g
 npm install --g webpack
 
 // локально
+npm install webpack --save
 npm install webpack --save-dev
 
 // вызов
@@ -18,3 +19,7 @@ webpack -p
 npm install --g node-static
 // запуск
 static &
+
+// jquery
+npm install jquery --save
+var $ = require("jquery");
