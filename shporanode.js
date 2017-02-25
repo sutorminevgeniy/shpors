@@ -1,5 +1,6 @@
 // создание проекта (package.json)
 npm init
+npm init -y
 
 /* npmjs.org */
 // установка модуля

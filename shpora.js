@@ -49,6 +49,9 @@
       }
     }
 
+    for (key in obj) {
+      /* ... делать что-то с obj[key] ... */
+    }
 
     switch (a) {
       case 3:
