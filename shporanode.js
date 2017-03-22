@@ -11,15 +11,20 @@ npm install
 (npm i)
 // глобально
 npm install --g express
+// Установка определённой версии пакета
+npm install http-server@0.3.0
 
 // удаление модуля
 npm remove express
-
 // удаление не используемых модулей
 npm prune
-
 // обновление всех модулей
 npm update
+// Удаление локально установленного пакета
+npm uninstall http-server
+// Удаление глобально установленного пакета
+npm uninstall http-server -g
+
 
 // установленные пакеты
 npm list

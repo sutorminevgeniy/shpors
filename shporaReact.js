@@ -7,3 +7,6 @@
   npm install --save-dev css-loader style-loader
   npm install --save-dev node-sass sass-loader
   npm install --save-dev react-hot-loader
+
+  npm install --save-dev file-loader
+  npm install --save react-router
