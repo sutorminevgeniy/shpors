@@ -1,10 +1,37 @@
 "(.+)": \[([^\[\]]*)\]
-
 "(.+)": {(\s+[^{}]*\s+)}
-
 !!!!  <$1>$2</$1>
 
 
 ((<parameters>)|,)\s+{([^{}]*\s+)}
-
 !!!!  $1<parameter>$2</parameter>
+
+
+img src="(.+?)"
+!!!!  img src={require('./$1')}
+
+src="(.+?)"
+!!!!  src={require('./$1')}
+
+<!--(.+?)-->
+!!!!  /*$1*/
+
+class=
+!!!!  className=
+
+<img(.+?)>
+!!!!  <img$1 />
+
+<li data-id="(.+?)"(.+?)>((.|\s)+?)</li>
+!!!!
+  {
+    data-id: ='$1'$3
+  },
+
+
+<img title="" alt="" src={require('(.+?)')} />
+<span className="portfolio-overlay"></span>
+!!!!
+    img: {
+      src: '$1'
+    },
