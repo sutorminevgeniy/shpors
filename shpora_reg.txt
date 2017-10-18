@@ -1,26 +1,33 @@
 "(.+)": \[([^\[\]]*)\]
 "(.+)": {(\s+[^{}]*\s+)}
-!!!!  <$1>$2</$1>
+!!!!  
+<$1>$2</$1>
 
 
 ((<parameters>)|,)\s+{([^{}]*\s+)}
-!!!!  $1<parameter>$2</parameter>
+!!!!  
+$1<parameter>$2</parameter>
 
 
 img src="(.+?)"
-!!!!  img src={require('./$1')}
+!!!!  
+img src={require('./$1')}
 
 src="(.+?)"
-!!!!  src={require('./$1')}
+!!!!  
+src={require('./$1')}
 
 <!--(.+?)-->
-!!!!  /*$1*/
+!!!!  
+/*$1*/
 
 class=
-!!!!  className=
+!!!!  
+className=
 
 <img(.+?)>
-!!!!  <img$1 />
+!!!!  
+<img$1 />
 
 <li data-id="(.+?)"(.+?)>((.|\s)+?)</li>
 !!!!
@@ -35,3 +42,38 @@ class=
     img: {
       src: '$1'
     },
+
+
+"captions": {[\s\S]+?},(\s+)"assets":
+!!!!
+"captions": {},
+        "assets":
+
+
+
+"captions": {[\s\S]+?},(\s+)"assets":
+!!!!
+"assets":
+
+,(\s+)"type": "(.+?)",
+!!!!
+,
+
+,(\s+)"background": "(.+?)",
+!!!!
+,
+
+,(\s+)"choices": \[[\s\S]+?\]
+!!!!
+
+
+,(\s+)"components": \[[\s\S]+?\](\s+)},(\s+){(\s+)"name"
+!!!!
+
+      },
+      {
+        "name"
+
+EN
+!!!!
+ES
