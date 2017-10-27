@@ -11,6 +11,7 @@ npm install --save-dev babel-plugin-transform-react-jsx-img-import
 npm install --save-dev file-loader
 npm install --save-dev css-loader style-loader
 npm install --save-dev node-sass sass-loader
+npm install --save-dev html-webpack-plugin
 npm install --save-dev react-hot-loader
 
 
@@ -29,3 +30,5 @@ npm uninstall react-router
 npm install --save redux react-redux
 npm install --save redux@3.3.1 react-redux@4.4.1
 npm uninstall redux react-redux
+
+npm install --g node-gyp@3.6.2
