@@ -293,6 +293,8 @@
       /* ... делать что-то с obj[key] ... */
     }
 
+    let arr = Object.entries(obj)
+
     function User() {}
     var user = new User();
     alert( user instanceof User ); // true
