@@ -5,6 +5,7 @@ npm init -y
 /* npmjs.org */
 // установка модуля
 npm install --save express
+npm install --save express@3.5.0
 (npm install --save-dev express)
 // установка модулей в package.json
 npm install
@@ -22,6 +23,7 @@ npm prune
 npm update
 // Удаление локально установленного пакета
 npm uninstall http-server
+npm uninstall express
 // Удаление глобально установленного пакета
 npm uninstall http-server -g
 
