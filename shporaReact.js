@@ -15,6 +15,9 @@ npm install --save-dev html-webpack-plugin
 npm install --save-dev react-hot-loader
 
 
+npm install --save react-addons-css-transition-group
+
+
 npm uninstall react react-router react-dom redux react-redux
 npm install --save  react react-router react-dom redux react-redux
 
