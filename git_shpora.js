@@ -49,6 +49,7 @@ git diff --staged ИМЯ_ФАЙЛА
 
 // создать коммит
 git commit -m ИМЯ_КАММИТА
+git commit --no-verify -m "[PES-19] Lab report component"
 // создать коммит плюс сохранить измененияъ
 git commit -am ИМЯ_КАММИТА
 // переделать коммит

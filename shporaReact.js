@@ -4,7 +4,6 @@ npm init -y
 npm install --save react react-dom
 npm install --save redux react-redux
 npm install --save react-router-dom react-router-redux@next
-npm install --save history
 
 npm install --save-dev webpack webpack-dev-server
 npm install --save-dev babel-core babel-preset-env babel-loader babel-preset-react
@@ -15,6 +14,21 @@ npm install --save-dev node-sass sass-loader
 npm install --save-dev html-webpack-plugin
 npm install --save-dev react-hot-loader
 
+
+
+create-react-app frontlearn_cra
+npm install create-react-app-sass --save-dev
+"scripts": {
+  "start": "react-scripts-with-sass start",
+  "build": "react-scripts-with-sass build",
+  "test": "react-scripts test --env=jsdom",
+  "eject": "react-scripts eject"
+},
+npm run build
+npm start
+
+npm install --save axios
+npm install --save redux-promise redux-thunk
 
 
 npm install --save react-addons-css-transition-group

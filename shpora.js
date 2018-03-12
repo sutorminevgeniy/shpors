@@ -306,6 +306,9 @@
     obj.hasOwnProperty(prop);   // возвращает true, если свойство prop принадлежит 
                                 // самому объекту obj, иначе false.
 
+    JSON.parse(str)
+    JSON.stringify(value, replacer, space)
+
     function inherit(proto) {
         function F() {};     
         F.prototype = proto;
