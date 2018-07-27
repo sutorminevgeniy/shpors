@@ -48,6 +48,12 @@ npm install --g node-static
 // запуск
 static &
 
+/*---------------- module -----------------*/
+// debug
+npn i -g node-inspector // сейчас встроено в node.js
+node --inspect app
+chrome://inspect
+
 
 /*---------------- Code -------------------*/
 // Module
