@@ -48,6 +48,12 @@ npm install --g node-static
 // запуск
 static &
 
+
+npm install -g nodemon
+npm install --save-dev nodemon
+
+nodemon [your node app]
+
 /*---------------- module -----------------*/
 // debug
 npn i -g node-inspector // сейчас встроено в node.js
