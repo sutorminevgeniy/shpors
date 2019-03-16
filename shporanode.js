@@ -1,3 +1,6 @@
+node --version
+npm version
+
 // создание проекта (package.json)
 npm init
 npm init -y
@@ -27,6 +30,7 @@ npm uninstall express
 // Удаление глобально установленного пакета
 npm uninstall -g http-server
 
+npm install gulp gulp-cli -g
 
 // установленные пакеты
 npm list
