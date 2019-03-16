@@ -25,7 +25,7 @@ npm update
 npm uninstall http-server
 npm uninstall express
 // Удаление глобально установленного пакета
-npm uninstall http-server -g
+npm uninstall -g http-server
 
 
 // установленные пакеты

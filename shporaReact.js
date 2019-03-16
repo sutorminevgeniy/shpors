@@ -46,3 +46,12 @@ npm uninstall react-router
 npm uninstall react-router-redux
 
 npm install --g node-gyp@3.6.2
+
+// new
+npm install --save-dev webpack webpack-dev-server webpack-cli
+npm install --save-dev @babel/core @babel/preset-env
+npm install --save-dev babel-loader
+npm install --save-dev @babel/preset-react
+npm install --save react react-dom
+
+npm install --save-dev react-hot-loader

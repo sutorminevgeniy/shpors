@@ -4,7 +4,6 @@ npm install webpack -g
 npm install --g webpack
 
 // локально
-npm install webpack --save
 npm install webpack --save-dev
 
 // вызов
@@ -23,3 +22,8 @@ static &
 // jquery
 npm install jquery --save
 var $ = require("jquery");
+
+// package.json
+"scripts": {
+    "start": "webpack --config webpack.config.js"
+}
