@@ -1,6 +1,14 @@
 node --version
 npm version
 
+// установленные пакеты
+npm list
+npm ls
+// показывает установленные глобально пакеты
+npm list -g --depth=0
+
+
+
 // создание проекта (package.json)
 npm init
 npm init -y
@@ -32,11 +40,6 @@ npm uninstall -g http-server
 
 npm install gulp gulp-cli -g
 
-// установленные пакеты
-npm list
-npm ls
-// показывает установленные глобально пакеты
-npm list -g --depth=0
 
 
 // запуск приложения
@@ -47,16 +50,20 @@ node app.js
 npm help prune
 
 // простейший модуль статики
-// установка (глобально)
-npm install --g node-static
-// запуск
-static &
+npm install -g node-static
+static -p 8000
+
+// локальный сервер http-server (wifi)
+npm install -g http-server
+http-server -p 8000
 
 
 npm install -g nodemon
 npm install --save-dev nodemon
 
 nodemon [your node app]
+
+
 
 /*---------------- module -----------------*/
 // debug
