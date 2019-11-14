@@ -1,33 +1,41 @@
 System.out.print("Hello world! ");
 System.out.println("Note for Java");
 
-byte a = 5; // -128 127
-short b = -100; // -32768 32767
-int c;
-c = 1000000;
-long d = 1122334455;
-System.out.println();
-System.out.println(a);
-System.out.println("short b: " + b);
+// Преременные
+  byte a = 5; // -128 127
+  short b = -100; // -32768 32767
+  int c;
+  c = 1000000;
+  long d = 1122334455;
 
-double double1 = 133.155;
-System.out.println();
-System.out.println("double double1: " + double1);
-float float1 = 150.32f;
-System.out.println("float float1: " + float1);
+  float float1 = 150.32f;
+  double double1 = 133.155;
 
-boolean boolean1 = true;
-boolean boolean2 = false;
-System.out.println();
-System.out.println(boolean1);
-System.out.println(boolean2);
+  boolean boolean1 = true;
 
-String str = "Hello!";
-System.out.println();
-System.out.println("String str: " + str);
+  char char1 = 'w';
 
-char char1 = 'w';
-System.out.println();
-System.out.println("char char1: " + char1);
+  String str = "Hello!";
+
+  System.out.println();
+  System.out.println("char char1: " + char1);
+
+// Массивы
+  String[] names;
+  names = new String[3];
+
+  String[] arrString = new String[3];
+  int[] arrInt1 = new int[10];
+  int[] arrInt2 = {15, 10, 100,9, 44};
+
+  arrString[0] = "Vasya";
+  arrString[1] = "Petya";
+  arrString[2] = "Vanya";
+
+  System.out.println(arrString[0]);
+
+  for (int i = 0; i < arrInt2.length; i++) {
+    System.out.println(arrInt2[i]);
+  }
 
 System.out.println("Good bye!");
