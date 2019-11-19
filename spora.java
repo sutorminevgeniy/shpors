@@ -38,6 +38,52 @@ System.out.println("Note for Java");
     System.out.println(arrInt2[i]);
   }
 
+// Строки
+  String s = "Hello world!";
+  String s2 = "hello";
+
+  System.out.println(s.length());
+  System.out.println(s.equals("Hello world!")); // s == "Hello world!"
+  System.out.println(s.equals("Hello!")); // s == "Hello!"
+  System.out.println(s.equals(s2));
+  System.out.println(s.equalsIgnoreCase(s2)); // без учета регистра
+
+  s = "TeXt";
+
+  System.out.println(s.toLowerCase());
+  System.out.println(s.toUpperCase());
+  System.out.println(s.charAt(1));
+  System.out.println(s.indexOf("Xt"));
+  System.out.println(s.contains("Hello"));
+  System.out.println(s.startsWith("He"));
+  System.out.println(s.endsWith("He"));
+
+  s = "Hello, world!";
+  String[] array = s.split(",");
+  System.out.println(array[0] + "!" + array[1] + "!");
+
+  String str = "My name is %s! I'm %d years old!";
+  int age = 30;
+  String name = "Ivan";
+  System.out.println(String.format(str, name, age));
+
+  String age2 = "30";
+  int a = Integer.parseInt(age2);
+
+  s = "Hello, world!";
+  System.out.println(s.substring(1, 5));
+  System.out.println(s.substring(7));
+
+  String s1 = "hello";
+  s2 = "world";
+  String s3 = "!";
+
+  String res = s1 + s2 + s3;
+  System.out.println(res);
+
+  res = s1.concat(s2).concat(s3);
+  System.out.println(res);
+
 // Операции
   int a;
   a = 10;
@@ -93,5 +139,25 @@ System.out.println("Note for Java");
   a *= 5; // a = a * 5;
   a /= 5; // a = a / 5;
   a %= 5; // a = a % 5;
+
+// Условные операторы
+  int i = 10;
+
+  if ( i > 5) {
+      System.out.println("i > 5");
+  } else  if ( i == 5) {
+      System.out.println("i == 5");
+  } else {
+      System.out.println("i < 5");
+  }
+
+  switch (i) {
+      case 1:
+          System.out.println("i == 1");
+      case 10:
+          System.out.println("i == 10");
+      default:
+          System.out.println("i == i");
+  }
 
 System.out.println("Good bye!");
