@@ -160,4 +160,54 @@ System.out.println("Note for Java");
           System.out.println("i == i");
   }
 
+// Циклы
+  for (int i = 0; i < 5; i++) {
+      System.out.println(i);
+  }
+
+  int[] array = {1, 4, 5, 7};
+  for (int element : array) {
+      System.out.println(element);
+  }
+
+  int j = 0;
+  while (j < 10) {
+      System.out.println(j);
+      j++;
+  }
+
+  j = 0;
+  do {
+      System.out.println(j);
+      j++;
+  } while (j < 10);
+
+// Коллекция
+  List<Integer> list = new ArrayList<>();
+
+  list.add(5);
+  list.add(10);
+  list.add(9);
+
+  System.out.println(list.get(1));
+
+  list.set(2, 100);
+  list.remove(1);
+
+  System.out.println(list.size());
+
+  list.clear();
+
+  List<Integer> list2 = new ArrayList<>();
+  list2.add(45);
+  list2.add(56);
+
+  list.addAll(list2);
+  list.removeAll(list2);
+
+  System.out.println(list.isEmpty());
+
+  System.out.println(list.contains(100));
+  System.out.println(list.containsAll(list2));
+
 System.out.println("Good bye!");
