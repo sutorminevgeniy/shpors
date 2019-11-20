@@ -182,7 +182,7 @@ System.out.println("Note for Java");
       j++;
   } while (j < 10);
 
-// Коллекция
+// Коллекции List
   List<Integer> list = new ArrayList<>();
 
   list.add(5);
@@ -209,5 +209,54 @@ System.out.println("Note for Java");
 
   System.out.println(list.contains(100));
   System.out.println(list.containsAll(list2));
+
+// Коллекции Set
+    Set<Integer> set = new HashSet<>();
+
+    set.add(11);
+    set.add(10);
+    set.add(12);
+    set.add(11); // не присвоит
+
+    set.remove(12);
+    set.contains(10);
+    set.clear();
+
+    System.out.println(set.size());
+
+    for (int i : set) {
+        System.out.println(i);
+    }
+
+// Коллекции Map
+  Map<Integer, String> map = new HashMap<>();
+  Map<String, String> map2 = new HashMap<>();
+
+  map.put(1, "Black");
+  map.put(2, "White");
+  map.put(3, "Yellow");
+  map.put(10, "Green");
+
+  System.out.println(map.get(1));
+  System.out.println(map.containsKey(10));
+  System.out.println(map.containsValue("Grey"));
+
+  Set<Integer> keys = map.keySet();
+  Iterator<Integer> iterator = keys.iterator();
+
+  while (iterator.hasNext()) {
+      int key = iterator.next();
+      System.out.println(key + " = " + map.get(key));
+  }
+
+  map.clear();
+  System.out.println(map.size());
+
+// Итераторы
+  Iterator<Integer> iterator = list.iterator();
+
+  while (iterator.hasNext()) {
+      System.out.println(iterator.next());
+  }
 
 System.out.println("Good bye!");
