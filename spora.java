@@ -259,4 +259,51 @@ System.out.println("Note for Java");
       System.out.println(iterator.next());
   }
 
+// Методы
+  public class TestClass {
+      public static void main(String[] args) {
+
+          int a = 13;
+          int b = 3;
+          int sum;
+
+          sum = getSum(a, b);
+          System.out.println(sum);
+
+          showSum(1, 3, 9);
+
+          sayhHello();
+      }
+
+      static int getSum(int x, int y) {
+          int sum;
+          sum = x + y;
+          return sum;
+      }
+
+      static void showSum(int x, int y, int z) {
+          int sum = x + y + z;
+          System.out.println(sum);
+      }
+
+      static void sayhHello() {
+          System.out.println("Hello");
+      }
+  }
+
+// Исключения
+  try {
+      System.out.println("x/y = " + x/y);
+  } catch (ArithmeticException e) {
+      System.out.println("Problem!");
+  } finally {
+      System.out.println("Finish!");
+  }
+
+  if (y == 0) {
+      throw new ArithmeticException("Cannot devide by zero");
+  } else {
+      System.out.println("x/y = " + x/y);
+  }
+
 System.out.println("Good bye!");
