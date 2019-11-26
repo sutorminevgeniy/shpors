@@ -306,4 +306,122 @@ System.out.println("Note for Java");
       System.out.println("x/y = " + x/y);
   }
 
+// Классы
+  public class Car {
+
+      public Car() {
+          System.out.println("New car created");
+      }
+
+      public Car(String color) {
+          this.color = color;
+          System.out.println("New car created");
+      }
+
+      static int var = 10;
+      final static int varFinal = 10;
+      static void method() {
+          System.out.println("var = " + var);
+      }
+
+      int width;
+      int length;
+      int weight = 2000;
+      int maxWeight = 2700;
+      String color;
+      int speed;
+      int maxSpeed = 200;
+
+      public void addWeight(int weight) {
+          this.weight += weight;
+          System.out.println("New weight = " + this.weight);
+      }
+
+      public void drive(int speed) {
+          if (weight <= maxWeight) {
+              this.speed = speed;
+          } else {
+              System.out.println("Can not drive!");
+          }
+      }
+  }
+
+  Car car1 = new Car();
+
+  car1.color = "black";
+  car1.length = 5000;
+  car1.width = 2000;
+
+  car1.addWeight(50);
+  car1.drive(120);
+
+  System.out.println("Car.var = " + Car.var);
+  Car.method();
+ 
+// Наследование
+  public class Animal {
+      String name;
+      String color;
+
+      public int b; // для всех
+      int c; // только в пакете
+      protected int d; // только в этом классе и наследнике
+      private int у; // только в этом классе
+
+      public  void  walk(String place) {
+          System.out.println("place = " + place);
+      }
+  }
+
+  public class Dog extends Animal {
+      int weight;
+
+      public void sit() {
+          System.out.println("I'm sittting");
+      }
+
+      @Override
+      public void walk(String place) {
+          System.out.println("place = home");
+      }
+  }
+
+// Абстрактный Класс
+  public abstract class Animal {
+      public int b; // для всех
+      int c; // только в пакете
+      String name;
+
+      public abstract void  saySmth();
+      public abstract void  eat();
+
+      public void walk(String place) {
+          System.out.println("place = " + place);
+      }
+  }
+
+// Интерфейсы
+  public interface Transport {
+      void go();
+      void stop();
+  }
+
+  public class Car implements Transport {
+      @Override
+      public void go() {
+          System.out.println("Go!");
+      }
+
+      @Override
+      public void stop() {
+          System.out.println("Stop!");
+      }
+  }
+
+  public class Car implements Transport, Mashin {
+    ...
+  }
+
+
+
 System.out.println("Good bye!");
