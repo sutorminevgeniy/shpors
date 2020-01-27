@@ -1,4 +1,5 @@
 node --version
+node -v
 npm version
 
 // установленные пакеты
