@@ -14,7 +14,10 @@ gitk&
 // Конфигурирование репозитория
   git config --global user.name "Sutormin Evgeniy"
   git config --global user.email "Sutormin.Evgeniy@yandex.ru"
-  // просмотр конфигурации
+  // Aктивировать хранилище учетных данных для всех Git-репозиториев
+  git config --global credential.helper store // После активации хранилища, при первом выполнении git pull или git push нужно ввести имя пользователя и пароль, которые будут сохранены в ~/.git-credentials
+  
+  // Просмотр конфигурации
   git config --list
   git config --list --show-origin // показывает где заданы
 
