@@ -1,14 +1,22 @@
 cd c:/OpenServer/domains/estemplate
 
+// Генерация ssh ключа
+ssh-keygen -t rsa -C "Sutormin.Evgeniy@yandex.ru"
+
+// Вызов инструментов
+git gui&
+gitk&
+
 // Создание пустого репозитория
   git init
 
 
 // Конфигурирование репозитория
   git config --global user.name "Sutormin Evgeniy"
-  git config --global user.email "sutormin.evgeniy@yandex.ru"
+  git config --global user.email "Sutormin.Evgeniy@yandex.ru"
   // просмотр конфигурации
   git config --list
+  git config --list --show-origin // показывает где заданы
 
 
 // показывает статус файлов
@@ -111,6 +119,7 @@ cd c:/OpenServer/domains/estemplate
     git log "ИМЯ_ВЕТКИ"
     // более компактный вывод
     git log --oneline
+    git log --graph --oneline --decorate --all
     git log --pretty = format: "%h - %an, %ar : %s"
     // с 05.02.16
     git log --since = 2016 - 02 - 05
