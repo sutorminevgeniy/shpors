@@ -1,6 +1,6 @@
 node --version
 node -v
-npm version
+npm --version
 
 // установленные пакеты
 npm list
@@ -57,6 +57,7 @@ static -p 8000
 // локальный сервер http-server (wifi)
 npm install -g http-server
 http-server -p 8000
+http-server -p 8000 -c-1
 
 
 npm install -g nodemon
