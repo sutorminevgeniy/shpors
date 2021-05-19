@@ -92,6 +92,8 @@ gitk&
   git commit -m ИМЯ_КАММИТА ПУТЬ // указанный
   // коммит без проверки 
   git commit --no -verify -m ИМЯ_КАММИТА
+  // пустой коммит
+  git commit --allow-empty -m ИМЯ_КАММИТА
   // переделать текущий коммит
   git commit --amend
   git commit --amend --no-edit
@@ -224,7 +226,7 @@ gitk&
 
 // отмена слияния веток
   git merge --abort
-  git reset --merge // тожу самое
+  git reset --merge // тоже самое
   git reset --hard // полная очистка
 
 // закачать на гитхаб
@@ -249,6 +251,7 @@ gitk&
 
 // вызов помощи
   git help log
+  git add -h // просмотр только список опций
 
 
 
